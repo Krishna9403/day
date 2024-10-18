@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Profile</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f7fa; /* Soft background color */
+            color: #333;
+            display: flex;
+            justify-content: center;
+            overflow-y: auto; /* Enable full-page vertical scrolling */
+        }
+        .container {
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            width: 90%;
+            max-width: 1200px;
+            background: rgb(158, 211, 12);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(218, 12, 12, 0.1);
+            margin: 20px 0; /* Add margin for spacing */
+            overflow: hidden; /* Hide overflow for rounded corners */
+        }
+        .header {
+            background: #e9ecef; /* Same background color as other sections */
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            font-size: 3em; /* Larger font size */
+            font-weight: bold; /* Bold font weight */
+            text-transform: uppercase;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            margin-bottom: 20px; /* Space below the header */
+        }
+        .main-content {
+            display: flex;
+            flex: 1; /* Allow content to fill remaining space */
+        }
+        .left-section {
+            flex: 1; /* 1/3 of the width */
+            padding: 20px;
+            border-right: 1px solid #e0e0e0;
+            background: #e9ecef; /* Same light gray background as the bank section */
+            color: #333; /* Darker text color for better contrast */
+            border-left: 4px solid #ffc107; /* Yellow left border for employee details */
+        }
+        .right-section {
+            flex: 2; /* 2/3 of the width */
+            padding: 20px;
+            max-height: 600px; /* Set max height for scrolling */
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+        h1 {
+            margin: 0; /* Remove margin for header */
+        }
+        .info-item, .bank-item, .salary-item {
+            margin: 15px 0;
+            font-size: 1.2em;
+            position: relative;
+            padding-left: 20px;
+            transition: color 0.3s;
+        }
+        .info-item:hover, .bank-item:hover, .salary-item:hover {
+            color: #007bff; /* Darker shade on hover */
+        }
+        .info-item::before, .bank-item::before, .salary-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            transform: translateY(-50%);
+        }
+        .info-item::before {
+            background: #ffc107; /* Yellow for employee info */
+        }
+        .bank-item::before {
+            background: #28a745; /* Green for bank info */
+        }
+        .salary-item::before {
+            background: #ff5722; /* Orange for salary info */
+        }
+        .bank-section, .salary-section {
+            background: #e9ecef; /* Light gray background for sections */
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .bank-section {
+            border-left: 4px solid #28a745; /* Green left border for bank section */
+        }
+        .salary-section {
+            margin-top: 30px; /* More space above the salary section */
+            border-left: 4px solid #ff5722; /* Orange left border for salary section */
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+            font-size: 0.9em;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+123
+    <div class="container">
+        <div class="header">
+            Profile
+        </div>
+        <div class="main-content">
+            <div class="left-section">
+                <h1>Details</h1>
+                <div class="info-item"><strong>Employee ID:</strong> E12345</div>
+                <div class="info-item"><strong>Employee Name:</strong> John Doe</div>
+                <div class="info-item"><strong>Designation:</strong> Software Engineer</div>
+                <div class="info-item"><strong>Gender:</strong> Male</div>
+                <div class="info-item"><strong>Email:</strong> john.doe@example.com</div>
+                <div class="info-item"><strong>Location:</strong> New York</div>
+                <div class="info-item"><strong>Department:</strong> IT</div>
+                <div class="info-item"><strong>Date of Joining:</strong> 2023-01-15</div>
+                <!-- Add more items if needed -->
+            </div>
+            <div class="right-section">
+                <div class="bank-section">
+                    <h1>Bank Information</h1>
+                    <div class="bank-item"><strong>Bank Name:</strong> ABC Bank</div>
+                    <div class="bank-item"><strong>Account Number:</strong> 123456789012</div>
+                    <div class="bank-item"><strong>IFSC Code:</strong> ABCD0123456</div>
+                    <div class="bank-item"><strong>PAN Card:</strong> ABCDE1234F</div>
+                </div>
+                <div class="salary-section">
+                    <h1>Salary Slip</h1>
+                    <div class="salary-item"><strong>Basic Salary:</strong> $3000</div>
+                    <div class="salary-item"><strong>HRA:</strong> $800</div>
+                    <div class="salary-item"><strong>Other Allowances:</strong> $200</div>
+                    <div class="salary-item"><strong>Deductions:</strong> $400</div>
+                    <div class="salary-item"><strong>Net Salary:</strong> $3600</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+</body>
+</html>
